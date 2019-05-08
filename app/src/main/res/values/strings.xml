@@ -1,0 +1,31 @@
+<resources>
+    <!--App data-->
+    <string name="app_name">Шаблон магазинного каталога</string>
+    <string name="basket">Корзина</string>
+    <string name="favorites">Избранное</string>
+    <string name="issue">Оформление заказа</string>
+
+    <string name="get_product_page">Перейти на сайт производителя.</string>
+    <string name="get_issue">Оформить</string>
+
+    <string name="product_added_to_basket">добавлен в корзину.</string>
+
+    <string name="to_basket">В корзину</string>
+    <string name="in_basket">Добавлено</string>
+    <string name="basket_is_empty">Добавьте товар в корзину\n</string>
+
+    <string name="price">Цена:</string>
+    <string name="product_price">1500000</string>
+    <string name="currency">р.</string>
+
+    <string name="quantity_yes">В наличии</string>
+    <string name="quantity_no">Закончились</string>
+
+    <string name="issue_result">Итого:</string>
+    <string name="buy">Отправить заказ</string>
+
+    <!--Test strings-->
+    <string name="counter_test">0</string>
+    <string name="products_name_test">Название товара</string>
+    <string name="issue_test">Arduino Tian x 3 = 5000\nArduino Tian x 3 = 5000\nArduino Tian x 3 = 5000\n</string>
+</resources>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/issue_issue_list_text_view"
+                style="@style/H2TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                tools:text="@string/issue_test" />
+
+            <TextView
+                android:id="@+id/issue_issue_result_text_view"
+                style="@style/H2BoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issue_issue_list_text_view"
+                android:layout_toLeftOf="@id/issue_issue_result_price_text_view"
+                android:layout_toStartOf="@id/issue_issue_result_price_text_view"
+                android:text="@string/issue_result" />
+
+            <TextView
+                android:id="@+id/issue_issue_result_price_text_view"
+                style="@style/H2BoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/issue_issue_result_text_view"
+                android:layout_marginLeft="@dimen/price_space"
+                android:layout_marginStart="@dimen/price_space"
+                android:layout_toLeftOf="@id/issue_currency_text_view"
+                android:layout_toStartOf="@id/issue_currency_text_view"
+                tools:text="@string/counter_test" />
+
+            <TextView
+                android:id="@+id/issue_currency_text_view"
+                style="@style/H2BoldTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/issue_issue_result_text_view"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/price_space"
+                android:layout_marginStart="@dimen/price_space"
+                android:text="@string/currency" />
+
+            <Button
+                android:id="@+id/issue_send_issue_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issue_issue_result_text_view"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/whatsapp_ico"
+                android:drawableStart="@drawable/whatsapp_ico"
+                android:text="@string/buy" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

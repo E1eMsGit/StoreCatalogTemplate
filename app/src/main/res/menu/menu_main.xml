@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/page_view"
+        android:icon="@drawable/ic_pageview"
+        android:title="@string/get_product_page"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/check_issue"
+        android:icon="@drawable/ic_check_issue"
+        android:title="@string/get_issue"
+        app:showAsAction="ifRoom" />
+</menu>
