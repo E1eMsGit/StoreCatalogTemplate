@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_bar_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/navigation_bar_horizontal_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorShadowGray"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_bar_horizontal_separator">
+
+        <ImageButton
+            android:id="@+id/navigation_bar_home_button"
+            style="@style/NavigationBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/navigation_bar_basket_button"
+            style="@style/NavigationBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shopping_cart" />
+
+        <ImageButton
+            android:id="@+id/navigation_bar_favorite_button"
+            style="@style/NavigationBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_favorite" />
+
+    </LinearLayout>
+
+</RelativeLayout>
