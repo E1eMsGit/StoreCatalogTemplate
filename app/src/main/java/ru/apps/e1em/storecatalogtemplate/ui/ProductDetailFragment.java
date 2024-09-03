@@ -4,11 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,10 +15,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import ru.apps.e1em.storecatalogtemplate.R;
 import ru.apps.e1em.storecatalogtemplate.interfaces.OnProductDetailPictureClickedListener;
 import ru.apps.e1em.storecatalogtemplate.model.Product;
 import ru.apps.e1em.storecatalogtemplate.model.ProductsList;
+
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -111,7 +114,7 @@ public class ProductDetailFragment extends Fragment {
         }
 
         ImageView productImageView = root.findViewById(R.id.product_detail_image_image_view);
-        Picasso.with(getContext()).load(getString(currentProduct.getImageLinkId())).into(productImageView);
+        Picasso.get().load(getString(currentProduct.getImageLinkId())).into(productImageView);
 
         // Нажатие на изображение продукта. Переход на фрагмент FullScreenPicture.
         productImageView.setOnClickListener(new View.OnClickListener() {

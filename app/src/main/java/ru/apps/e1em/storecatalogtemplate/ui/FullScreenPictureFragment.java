@@ -1,14 +1,16 @@
 package ru.apps.e1em.storecatalogtemplate.ui;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import ru.apps.e1em.storecatalogtemplate.R;
 import com.squareup.picasso.Picasso;
@@ -30,7 +32,7 @@ public class FullScreenPictureFragment extends Fragment {
     // Инициализация интерфейса.
     private void initUI(View root) {
         ImageView productImageView = root.findViewById(R.id.full_screen_picture_image_image_view);
-        Picasso.with(getContext()).load(getString(getArguments().getInt(PRODUCT_PICTURE_ID_KEY, 0))).into(productImageView);
+        Picasso.get().load(getString(getArguments().getInt(PRODUCT_PICTURE_ID_KEY, 0))).into(productImageView);
 
         // Наследование ActionBar из активности.
         ActionBar toolbar = ((AppCompatActivity) getContext()).getSupportActionBar();

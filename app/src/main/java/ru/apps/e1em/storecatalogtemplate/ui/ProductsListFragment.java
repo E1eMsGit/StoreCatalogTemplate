@@ -2,14 +2,7 @@ package ru.apps.e1em.storecatalogtemplate.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +10,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import ru.apps.e1em.storecatalogtemplate.R;
 import ru.apps.e1em.storecatalogtemplate.interfaces.OnListItemSelectedListener;
 import ru.apps.e1em.storecatalogtemplate.model.Product;
 import ru.apps.e1em.storecatalogtemplate.model.ProductsList;
+
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -88,7 +91,7 @@ public class ProductsListFragment extends Fragment {
         public void onBindViewHolder(final ProductsViewHolder holder, int position) {
             holder.titleTextView.setText(getString(products.get(position).getTitleId()));
             holder.priceTextView.setText(String.valueOf(products.get(position).getPrice()));
-            Picasso.with(context).load(getString(products.get(position).getImageLinkId())).into(holder.imageView);
+            Picasso.get().load(getString(products.get(position).getImageLinkId())).into(holder.imageView);
 
             holder.cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
