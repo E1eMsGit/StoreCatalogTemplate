@@ -2,13 +2,7 @@ package ru.apps.e1em.storecatalogtemplate.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,6 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
 
 import ru.apps.e1em.storecatalogtemplate.R;
 import ru.apps.e1em.storecatalogtemplate.interfaces.OnIssueButtonClickedListener;
@@ -135,7 +137,7 @@ public class BasketListFragment extends Fragment {
         public void onBindViewHolder(final BasketListFragment.BasketProductsViewHolder holder, int position) {
             holder.titleTextView.setText(getString(basketProducts.get(position).getTitleId()));
             holder.priceTextView.setText(String.valueOf(basketProducts.get(position).getPrice()));
-            Picasso.with(context).load(getString(basketProducts.get(position).getImageLinkId())).into(holder.imageView);
+            Picasso.get().load(getString(basketProducts.get(position).getImageLinkId())).into(holder.imageView);
             holder.productCounterTextView.setText(String.valueOf(basketProducts.get(position).getProductCount()));
 
             // Увеличить счетчик продукта.
