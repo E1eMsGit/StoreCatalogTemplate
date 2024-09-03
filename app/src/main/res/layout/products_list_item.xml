@@ -36,7 +36,6 @@
             style="@style/H2TextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/product_list_item_title_text_view"
             android:layout_alignStart="@id/product_list_item_title_text_view"
             android:layout_below="@id/product_list_item_title_text_view"
             android:layout_marginTop="8dp"
@@ -48,10 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/product_list_item_price_text_text_view"
-            android:layout_marginLeft="@dimen/price_space"
             android:layout_marginStart="@dimen/price_space"
             android:layout_toEndOf="@+id/product_list_item_price_text_text_view"
-            android:layout_toRightOf="@+id/product_list_item_price_text_text_view"
             android:text="@string/product_price" />
 
         <TextView
@@ -59,10 +56,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/product_list_item_price_text_text_view"
-            android:layout_marginLeft="@dimen/price_space"
             android:layout_marginStart="@dimen/price_space"
             android:layout_toEndOf="@+id/product_list_item_price_text_view"
-            android:layout_toRightOf="@+id/product_list_item_price_text_view"
             android:text="@string/currency" />
 
         <LinearLayout

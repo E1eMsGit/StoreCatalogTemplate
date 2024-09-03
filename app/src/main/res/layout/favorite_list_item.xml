@@ -14,7 +14,6 @@
             android:id="@+id/favorite_list_item_image_image_view"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_margin="8dp"
             android:background="@color/colorWhite"
@@ -27,8 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/favorite_list_item_image_image_view"
             android:layout_toEndOf="@id/favorite_list_item_image_image_view"
-            android:layout_toLeftOf="@id/favorite_list_item_delete_image_view"
-            android:layout_toRightOf="@id/favorite_list_item_image_image_view"
             android:layout_toStartOf="@id/favorite_list_item_delete_image_view"
             android:maxLines="1"
             android:text="@string/products_name_test" />
@@ -38,10 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/favorite_list_item_image_image_view"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:src="@drawable/ic_delete"
             android:tint="@color/colorPrimary" />
 
@@ -50,11 +45,9 @@
             style="@style/H2TextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/favorite_list_item_title_text_view"
             android:layout_alignStart="@+id/favorite_list_item_title_text_view"
             android:layout_below="@id/favorite_list_item_title_text_view"
             android:layout_marginEnd="@dimen/price_space"
-            android:layout_marginRight="@dimen/price_space"
             android:layout_marginTop="8dp"
             android:text="@string/price" />
 
@@ -65,9 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/favorite_list_item_price_text_text_view"
             android:layout_marginEnd="@dimen/price_space"
-            android:layout_marginRight="@dimen/price_space"
             android:layout_toEndOf="@id/favorite_list_item_price_text_text_view"
-            android:layout_toRightOf="@id/favorite_list_item_price_text_text_view"
             android:text="@string/product_price" />
 
         <TextView
@@ -76,7 +67,6 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/favorite_list_item_price_text_text_view"
             android:layout_toEndOf="@id/favorite_list_item_price_text_view"
-            android:layout_toRightOf="@id/favorite_list_item_price_text_view"
             android:text="@string/currency" />
 
         <Button
@@ -84,10 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/favorite_list_item_image_image_view"
-            android:layout_alignLeft="@+id/favorite_list_item_title_text_view"
             android:layout_alignStart="@+id/favorite_list_item_title_text_view"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:text="@string/to_basket"
             android:textSize="14sp" />
 
